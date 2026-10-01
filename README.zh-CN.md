@@ -21,6 +21,6 @@ CLI 输出 JSON。退出码 0 表示没有发现问题，1 表示需要人工检
 
 仅分析输入计划中的精确 URL 关系，不请求网址，不验证 301/308 状态、目标内容、索引或通配符规则。大小写、查询参数和尾斜线仍有区别。检查通过后，还要在实际服务器上验证。
 
-配套资料：[网站迁移模板](https://github.com/Jocab30/website-migration-kit)。
+配套资料：[网站迁移模板](https://github.com/awesomellm/website-migration-kit)。
 
 由 [ZequnWeb](https://zequnweb.com/zh/) 维护，使用 [MIT 许可证](LICENSE)。

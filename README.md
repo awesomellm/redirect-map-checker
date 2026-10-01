@@ -1,8 +1,10 @@
 # Redirect Map Checker
 
+[English](README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [繁體中文](README.zh-HK.md)
+
 Review a URL migration plan before a website redesign goes live. This dependency-free JavaScript module flags exact-match loops, chains, duplicate sources, and conflicting destinations.
 
-[Try the browser demo](https://zequnweb.com/tools/redirect-map-checker/) · [中文说明](README.zh-CN.md)
+[Try the browser demo](https://zequnweb.com/tools/redirect-map-checker/) (English interface).
 
 ## Run locally
 
@@ -60,3 +62,7 @@ Inventory useful old URLs, decide what stays or moves, assign relevant replaceme
 
 - [Website Migration Kit](https://github.com/awesomellm/website-migration-kit): reusable planning and acceptance templates.
 - [ZequnWeb website redesign checklist](https://zequnweb.com/blog/website-redesign-checklist/): content, migration, and launch workflow.
+
+## Maintainer and license
+
+Maintained by [ZequnWeb](https://zequnweb.com/). Available under the [MIT License](LICENSE).

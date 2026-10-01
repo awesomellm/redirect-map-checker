@@ -9,7 +9,7 @@ Review a URL migration plan before a website redesign goes live. This dependency
 Use Node.js 20 or newer. No package installation is required.
 
 ```sh
-git clone https://github.com/Jocab30/redirect-map-checker.git
+git clone https://github.com/awesomellm/redirect-map-checker.git
 cd redirect-map-checker
 node check.mjs example-valid.tsv https://example.com
 node --test redirect-map.test.mjs
@@ -58,14 +58,5 @@ Validate the deployed server rules separately, including permanent redirect stat
 
 Inventory useful old URLs, decide what stays or moves, assign relevant replacements, check the map, implement redirects, and verify production responses.
 
-- [Website Migration Kit](https://github.com/Jocab30/website-migration-kit): reusable planning and acceptance templates.
+- [Website Migration Kit](https://github.com/awesomellm/website-migration-kit): reusable planning and acceptance templates.
 - [ZequnWeb website redesign checklist](https://zequnweb.com/blog/website-redesign-checklist/): content, migration, and launch workflow.
-- [Google site-move guidance](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes): official migration reference.
-
-## Contributing
-
-For a bug report, include a small synthetic map, the origin, the actual result, and the expected result. Use example URLs in public issues. Run the tests before proposing a change.
-
-## Maintainer and license
-
-Built by [ZequnWeb](https://zequnweb.com/), an independent B2B web design and development studio. Available under the [MIT License](LICENSE).

@@ -60,7 +60,7 @@ Validate the deployed server rules separately, including permanent redirect stat
 
 Inventory useful old URLs, decide what stays or moves, assign relevant replacements, check the map, implement redirects, and verify production responses.
 
-- [Website Migration Kit](https://github.com/awesomellm/website-migration-kit): reusable planning and acceptance templates.
+- [Website Migration Kit](https://github.com/awesomellm/website-migration-kit/blob/main/README.md): reusable planning and acceptance templates.
 - [ZequnWeb website redesign checklist](https://zequnweb.com/blog/website-redesign-checklist/): content, migration, and launch workflow.
 
 ## Maintainer and license

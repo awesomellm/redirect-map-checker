@@ -4,8 +4,6 @@
 
 在網站重設上線前檢查 URL 遷移計劃。這個無需第三方依賴的 JavaScript 模組，可以找出精確 URL 對照關係中的循環、連鎖跳轉、重複來源和目標衝突。
 
-[線上使用](https://zequnweb.com/tools/redirect-map-checker/)（網頁介面為英文）。
-
 ## 在本機執行
 
 需要 Node.js 20 或更新版本，無需安裝第三方套件。
@@ -61,8 +59,8 @@ console.log(report);
 整理有價值的舊 URL，決定保留或遷移的頁面，選擇相關的新目標，檢查對照表，設定重新導向，再驗證正式環境的回應。
 
 - [網站遷移範本](https://github.com/awesomellm/website-migration-kit/blob/main/README.zh-HK.md)：可重複使用的規劃和驗收範本。
-- [ZequnWeb 網站重設檢查清單](https://zequnweb.com/blog/website-redesign-checklist/)（英文）：內容、遷移和上線流程。
+- [ZequnWeb 網站上線前 SEO 檢查清單](https://zequnweb.com/zh-hk/blog/website-seo-checklist-before-launch/)：內容、遷移和上線流程。
 
 ## 維護者與授權
 
-由 [ZequnWeb](https://zequnweb.com/zh-hk/) 維護，採用 [MIT 授權條款](LICENSE)。
+由 [ZequnWeb](https://zequnweb.com/zh-hk/) 維護，採用 MIT 授權條款（`LICENSE`）。

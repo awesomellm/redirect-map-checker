@@ -4,8 +4,6 @@
 
 ウェブサイトのリニューアルを公開する前に、URL の移行計画を確認するツールです。外部ライブラリに依存しない JavaScript モジュールで、URL の完全一致による対応関係から、ループ、チェーン、転送元の重複、転送先の競合を検出します。
 
-[ブラウザーで試す](https://zequnweb.com/tools/redirect-map-checker/)（画面は英語です）。
-
 ## ローカルで実行する
 
 Node.js 20 以降が必要です。追加のパッケージをインストールする必要はありません。
@@ -61,8 +59,8 @@ console.log(report);
 有用な旧 URL を一覧化し、維持するページと移行するページを決め、関連する転送先を選びます。対応表を検査してリダイレクトを設定した後、本番環境の応答を確認してください。
 
 - [ウェブサイト移行テンプレート](https://github.com/awesomellm/website-migration-kit/blob/main/README.ja.md)：計画と公開時の確認に使えるテンプレートです。
-- [ZequnWeb のリニューアルチェックリスト](https://zequnweb.com/blog/website-redesign-checklist/)（英語）：コンテンツ、移行、公開の手順をまとめています。
+- [ZequnWeb のリニューアルチェックリスト](https://zequnweb.com/jp/blog/homepage-renewal-checklist/)：コンテンツ、移行、公開の手順をまとめています。
 
 ## メンテナンスとライセンス
 
-[ZequnWeb](https://zequnweb.com/jp/) が管理しています。[MIT ライセンス](LICENSE)で公開しています。
+[ZequnWeb](https://zequnweb.com/jp/) が管理しています。MIT ライセンス（`LICENSE`）で公開しています。

@@ -4,8 +4,6 @@
 
 在网站改版上线前检查 URL 迁移计划。这个无需第三方依赖的 JavaScript 模块可以发现精确 URL 映射中的循环、链式跳转、重复来源和目标冲突。
 
-[在线使用](https://zequnweb.com/tools/redirect-map-checker/)（网页界面为英文）。
-
 ## 本地运行
 
 需要 Node.js 20 或更新版本，无需安装第三方依赖。
@@ -61,8 +59,8 @@ console.log(report);
 整理有价值的旧 URL，决定保留或迁移的页面，选择相关的新目标，检查映射，配置重定向，再验证生产环境的响应。
 
 - [网站迁移模板](https://github.com/awesomellm/website-migration-kit/blob/main/README.zh-CN.md)：可重复使用的规划和验收模板。
-- [ZequnWeb 网站改版检查清单](https://zequnweb.com/blog/website-redesign-checklist/)（英文）：内容、迁移和上线流程。
+- [ZequnWeb 网站改版检查清单](https://zequnweb.com/zh/blog/website-redesign-checklist/)：内容、迁移和上线流程。
 
 ## 维护者与许可
 
-由 [ZequnWeb](https://zequnweb.com/zh/) 维护，使用 [MIT 许可证](LICENSE)。
+由 [ZequnWeb](https://zequnweb.com/zh/) 维护，使用 MIT 许可证（`LICENSE`）。

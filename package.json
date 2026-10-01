@@ -1,0 +1,14 @@
+{
+  "name": "zequnweb-redirect-map-checker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Check exact URL migration plans for redirect loops, chains, duplicates and conflicts.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test redirect-map.test.mjs"
+  }
+}

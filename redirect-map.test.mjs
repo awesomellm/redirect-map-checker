@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { checkRedirectMap as check } from './redirect-map.mjs';
+const base = 'https://example.com';
+test('detects loops including upstream entry points', () => {const rows=check('/start\t/a\n/a\t/b\n/b\t/a',base);assert.ok(rows.every(r=>r.issues.includes('Redirect loop')));});
+test('detects conflicts, duplicates, chains and self redirects', () => {const rows=check('/a\t/b\n/a\t/c\n/d\t/e\n/e\t/f\n/f\t/f\n/g\t/h\n/g\t/h',base);assert.ok(rows[0].issues.includes('Conflicting destinations for this source'));assert.ok(rows[5].issues.includes('Duplicate mapping'));assert.ok(rows[4].issues.includes('Self redirect'));assert.ok(rows[2].issues.includes('Redirect loop'));});
+test('preserves slash, query and case distinctions',()=>{const rows=check('/A\t/a\n/a/\t/b\n/a?q=1\t/b?q=2',base);assert.ok(rows.every(r=>r.issues.length===0));});
+test('normalizes absolute and relative URLs and reports a chain',()=>{const rows=check('/a\thttps://example.com/b\n/b\t/c',base);assert.match(rows[0].issues.join(),/2 hops/);});
+test('rejects unsupported inputs and flags external destinations',()=>{assert.throws(()=>check('',base));assert.throws(()=>check('/a\t/b','file:///tmp'));const rows=check('/a\tjavascript:alert(1)\n/b\t/c#fragment\n/c\thttps://other.example/d\n/d\thttp://example.com/e',base);assert.ok(rows[0].invalid);assert.ok(rows[1].invalid);assert.match(rows[2].issues.join(),/External/);assert.match(rows[3].issues.join(),/downgrade/);});
+test('validates column count and bounds',()=>{assert.ok(check('/a,/b',base)[0].invalid);assert.throws(()=>check(Array(2001).fill('/a\t/b').join('\n'),base));});

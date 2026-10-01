@@ -6,6 +6,8 @@ Review a URL migration plan before a website redesign goes live. This dependency
 
 [Try the browser demo](https://zequnweb.com/tools/redirect-map-checker/) (English interface).
 
+[Hosting configuration and HTTP verification](DEPLOYMENT.md)
+
 ## Run locally
 
 Use Node.js 20 or newer. No package installation is required.
